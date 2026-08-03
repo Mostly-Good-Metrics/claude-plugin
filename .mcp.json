@@ -1,0 +1,6 @@
+{
+  "mgm": {
+    "transport": "http",
+    "url": "https://app.mostlygoodmetrics.com/mcp"
+  }
+}

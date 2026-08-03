@@ -1,0 +1,21 @@
+{
+  "name": "mostly-good-metrics",
+  "version": "1.0.0",
+  "description": "Official Claude Code plugin for Mostly Good Metrics: analyze product metrics, build and diagnose funnels, run weekly reviews, and instrument your app with the right MGM SDK.",
+  "author": {
+    "name": "Mostly Good Metrics"
+  },
+  "homepage": "https://mostlygoodmetrics.com",
+  "repository": "https://github.com/Mostly-Good-Metrics/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "analytics",
+    "metrics",
+    "funnels",
+    "retention",
+    "experiments",
+    "product-analytics",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json"
+}

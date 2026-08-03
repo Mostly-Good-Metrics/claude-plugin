@@ -1,0 +1,15 @@
+{
+  "name": "mostly-good-metrics",
+  "owner": {
+    "name": "Mostly Good Metrics"
+  },
+  "description": "Official Claude Code plugin marketplace for Mostly Good Metrics — product analytics skills and MCP tools.",
+  "plugins": [
+    {
+      "name": "mostly-good-metrics",
+      "source": "./",
+      "description": "Official Claude Code plugin for Mostly Good Metrics: analyze product metrics, build and diagnose funnels, run weekly reviews, and instrument your app with the right MGM SDK.",
+      "version": "1.0.0"
+    }
+  ]
+}
