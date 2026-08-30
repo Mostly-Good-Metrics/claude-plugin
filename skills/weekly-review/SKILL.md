@@ -1,12 +1,19 @@
 ---
 name: weekly-review
 description: Produce a compact weekly product report from Mostly Good Metrics — WAU, signups, and top-event deltas vs. the prior week, notable movers, and one suggested action.
-disable-model-invocation: true
 ---
 
 # Weekly Review
 
 Produce a compact weekly report. Keep the whole output under ~30 lines. Numbers, not narrative.
+
+## Access paths
+
+Use MCP (`mgm_get_dashboard`, `mgm_list_event_types`, `mgm_execute_query`,
+`mgm_list_funnels`, `mgm_execute_funnel`) when it is connected. Otherwise use
+`mgm dashboard --range 7d --json`, `mgm events types --range 7d --json`,
+`mgm queries execute ... --json`, and `mgm funnels ... --json`. Keep the two
+seven-day windows equal and state which path supplied the data.
 
 ## Gather (last 7 days vs. the 7 days before)
 
