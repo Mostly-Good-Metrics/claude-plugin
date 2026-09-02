@@ -1,7 +1,7 @@
 {
   "name": "mostly-good-metrics",
-  "version": "1.0.0",
-  "description": "Official Claude Code plugin for Mostly Good Metrics: analyze product metrics, build and diagnose funnels, run weekly reviews, and instrument your app with the right MGM SDK.",
+  "version": "1.1.0",
+  "description": "Official Claude Code plugin for Mostly Good Metrics: connect MGM MCP and use the complete portable skill set for analytics, instrumentation, dashboards, funnels, retention, and experiments.",
   "author": {
     "name": "Mostly Good Metrics"
   },

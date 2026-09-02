@@ -1,0 +1,27 @@
+name: Portable skill sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 14 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout plugin
+        uses: actions/checkout@v4
+        with:
+          path: plugin
+
+      - name: Checkout canonical portable skills
+        uses: actions/checkout@v4
+        with:
+          repository: Mostly-Good-Metrics/skills
+          path: portable
+
+      - name: Verify plugin skill mirror
+        run: diff -ru portable/skills plugin/skills
