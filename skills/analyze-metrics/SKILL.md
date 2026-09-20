@@ -7,6 +7,15 @@ description: Answer "how is X doing" questions about product metrics using Mostl
 
 Answer product-metric questions with real numbers from Mostly Good Metrics (MGM), not vibes.
 
+## Access paths
+
+Use the connected MGM MCP when available: `mgm_whoami`, `mgm_list_projects`,
+`mgm_get_dashboard`, `mgm_get_filters`, `mgm_list_event_types`, and
+`mgm_execute_query`. With the CLI, use the equivalents: `mgm dashboard`,
+`mgm dashboard filters`, `mgm events types`, and `mgm queries execute`.
+Prefer MCP for conversational exploration and `mgm ... --json` for reproducible
+or scripted work. Never claim a tool returned data that you did not run.
+
 ## Workflow
 
 1. **Orient.** If you don't know which project to query, call `whoami` and `list_projects`. If there are multiple projects, ask which one (or pick the obvious match to the user's question and say so).
@@ -15,6 +24,7 @@ Answer product-metric questions with real numbers from Mostly Good Metrics (MGM)
 4. **Query.** Use `execute_query` for ad-hoc questions. Prefer:
    - **Date range:** last 30 days by default; last 7 days for "this week" questions; honor explicit ranges.
    - **Grouping:** group by the dimension in the question (platform, plan, `$app_version`, country, etc.). `$`-prefixed properties are auto-collected (device/app metadata) — good default groupings.
+   - **Events:** with the CLI, pass comma-separated event names through `mgm queries execute --events ...` instead of querying unrelated event volume.
    - **Comparison:** for "how is X doing", also run the same query for the prior equal-length period so you can report deltas.
 5. **Save when asked.** Only call `create_query` if the user wants to keep the metric (it can then power a dashboard widget). Don't save ad-hoc explorations.
 
