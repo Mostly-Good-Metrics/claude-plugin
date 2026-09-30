@@ -13,17 +13,17 @@ The official [Mostly Good Metrics](https://mostlygoodmetrics.com) plugin for [Cl
 
 ## What you get
 
-The plugin connects the MGM MCP server (`https://app.mostlygoodmetrics.com/mcp`), giving Claude tools to query events, run and save queries, build funnels, measure retention, manage experiments, and read your dashboard.
+The plugin connects the MGM MCP server (`https://app.mostlygoodmetrics.com/mcp`), giving Claude tools to query events, run and save queries, build funnels, measure retention, manage experiments, follow goals, and read your dashboard.
 
 ### Skills
 
-- **analyze-metrics** — Claude uses this automatically when you ask how something is doing.
+- **analyze-metrics** — Claude uses this automatically when you ask how something is doing, including whether a goal is on pace.
   - "How are signups trending this month?"
-  - "Which platform drives the most sessions?"
+  - "Are we on track for 1,000 users by the end of the month?"
 - **funnel-doctor** — Claude uses this automatically for conversion questions.
   - "Where do users drop off during onboarding?"
   - "Build a checkout funnel and tell me what to fix first."
-- **weekly-review** — produce a compact WoW report: WAU, signups, top-event deltas, notable movers, and one suggested action.
+- **weekly-review** — produce a compact WoW report: WAU, signups, top-event deltas, goal pace when a goal exists, notable movers, and one suggested action.
 - **instrument-my-app** — Claude uses this automatically when you want to add analytics to code.
   - "Add MGM tracking to my Flutter app."
   - "What events should I track for this signup flow?"
