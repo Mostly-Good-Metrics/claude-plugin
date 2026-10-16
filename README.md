@@ -13,7 +13,7 @@ The official [Mostly Good Metrics](https://mostlygoodmetrics.com) plugin for [Cl
 
 ## What you get
 
-The plugin connects the MGM MCP server (`https://app.mostlygoodmetrics.com/mcp`), giving Claude tools to query events, run and save queries, build funnels, measure retention, manage experiments, and read your dashboard.
+The plugin connects the MGM MCP server (`https://api.mostlygoodmetrics.com/mcp`), giving Claude tools to query events, run and save queries, build funnels, measure retention, manage experiments, and read your dashboard.
 
 ### Skills
 
